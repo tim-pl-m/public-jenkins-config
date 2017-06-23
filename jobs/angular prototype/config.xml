@@ -12,7 +12,7 @@
     <script>node {
    echo &apos;Hello&apos;
    echo &apos;World&apos;
-   
+   sudo su
 }</script>
     <sandbox>true</sandbox>
   </definition>
