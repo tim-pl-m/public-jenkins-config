@@ -12,7 +12,7 @@
     <script>node {
    echo &apos;Hello&apos;
    echo &apos;World&apos;
-   docker ps
+//   docker ps
 }</script>
     <sandbox>true</sandbox>
   </definition>
