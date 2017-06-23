@@ -10,8 +10,9 @@
   </properties>
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.36">
     <script>node {
-   echo &apos;Hello World&apos;
-   docker ps
+   echo &apos;Hello&apos;
+   echo &apos;World&apos;
+   #docker ps
 }</script>
     <sandbox>true</sandbox>
   </definition>
