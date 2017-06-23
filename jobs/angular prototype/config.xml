@@ -9,7 +9,9 @@
     </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
   </properties>
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.36">
-    <script></script>
+    <script>node {
+   echo &apos;Hello World&apos;
+}</script>
     <sandbox>true</sandbox>
   </definition>
   <triggers/>
