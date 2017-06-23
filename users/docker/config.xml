@@ -3,7 +3,7 @@
   <fullName>jenkins</fullName>
   <properties>
     <jenkins.security.ApiTokenProperty>
-      <apiToken>{AQAAABAAAAAwkK0HE5o4/E3CIZUarIJNINtGjEwewC+9/vDgiEvLAKBGyH1WANgP5Fmsm+02aPviMaCph3zASbspX9448Lqokg==}</apiToken>
+      <apiToken>{AQAAABAAAABwDJMwpRgL3ugKperetOv0KxCPUiEICXsZ4/+jXkiHEx0cMo5KPPLsmdX441cu1jKZEZTUnwwjarZOE24oNRF2ThzjFnr0kxDjOL11jRH5F+zr2asf+tY1rK1ScpJXG5Qdbe8k3c14rDQdnLxi67abOajpLVUtwvhTly0JQVhCJxY=}</apiToken>
     </jenkins.security.ApiTokenProperty>
     <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@2.1.14">
       <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash"/>
@@ -34,5 +34,8 @@
     <hudson.tasks.Mailer_-UserProperty plugin="mailer@1.20">
       <emailAddress>docker@jenkins.xzy</emailAddress>
     </hudson.tasks.Mailer_-UserProperty>
+    <jenkins.security.LastGrantedAuthoritiesProperty>
+      <timestamp>0</timestamp>
+    </jenkins.security.LastGrantedAuthoritiesProperty>
   </properties>
 </user>
