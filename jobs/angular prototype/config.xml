@@ -14,7 +14,7 @@
    echo &apos;World&apos;
    docker ps
 }</script>
-    <sandbox>true</sandbox>
+    <sandbox>false</sandbox>
   </definition>
   <triggers/>
   <disabled>false</disabled>
