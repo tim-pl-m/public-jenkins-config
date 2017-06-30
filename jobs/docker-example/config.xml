@@ -15,6 +15,7 @@
             git &apos;git@github.com-application-jenkins:antonfisher/node-mocha-extjs.git&apos;
         }
         stage(&apos;Build&apos;) {
+            docker.version
             docker
                 .image(&apos;jenkins-agent-ubuntu&apos;)
                 .inside(&apos;--volumes-from jenkins-master&apos;) {
