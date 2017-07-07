@@ -28,9 +28,9 @@
             def demo = docker.image(&apos;javaee/java-demo&apos;)
             // demo.withRun(&apos;-p 8082:80&apos;)
             docker.image(&apos;javaee/java-demo&apos;).withRun(&apos;-p 8082:80&apos;){
-                // c -&gt;
+                c -&gt;
                 // sh &quot;curl -i http://localhost:80/&quot;
-                ls
+                sh ls
             }
         }
     }
