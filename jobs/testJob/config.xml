@@ -13,7 +13,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>docker stop demo
+      <command>docker run --rm -d -p 8082:80 --name demo javaee/java-demo
+docker stop demo
 docker run --rm -d -p 8082:80 --name demo javaee/java-demo</command>
     </hudson.tasks.Shell>
   </builders>
