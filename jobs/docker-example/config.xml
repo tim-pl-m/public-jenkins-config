@@ -26,7 +26,8 @@
             // docker
             //     .image(&apos;javaee/java-demo&apos;)
             def demo = docker.image(&apos;javaee/java-demo&apos;)
-            demo.withRun(&apos;-p 8082:80&apos;)
+            // demo.withRun(&apos;-p 8082:80&apos;)
+            docker.image(&apos;javaee/java-demo&apos;).withRun(&apos;-p 8082:80&apos;)
         }
     }
 }</script>
