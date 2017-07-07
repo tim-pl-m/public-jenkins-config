@@ -32,7 +32,7 @@
             //     // sh &quot;curl -i http://localhost:80/&quot;
             //     sh ls
             // }
-            docker.image(&apos;javaee/java-demo&apos;).run(&apos;-p 8082:80&apos;)
+            docker.image(&apos;javaee/java-demo&apos;).run(&apos;-p 8083:80&apos;)
             // docker.image(&apos;javaee/java-demo&apos;).run().args(&apos;--rm -it -p 8082:80&apos;)
             // docker {
             //     image &apos;javaee/java-demo&apos;
