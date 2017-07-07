@@ -11,15 +11,20 @@
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.36">
     <script>node(&apos;master&apos;) {
     docker.withServer(&apos;unix:///var/run/docker.sock&apos;) {
-        stage(&apos;Git clone&apos;) {
-            git &apos;git@github.com-application-jenkins:antonfisher/node-mocha-extjs.git&apos;
-        }
-        stage(&apos;Build&apos;) {
+        // stage(&apos;Git clone&apos;) {
+        //     git &apos;git@github.com-application-jenkins:antonfisher/node-mocha-extjs.git&apos;
+        // }
+        // stage(&apos;Build&apos;) {
+        //     docker
+                
+        //         .image(&apos;jenkins-agent-ubuntu&apos;)
+        //         .inside(&apos;--volumes-from jenkins-master&apos;) {
+        //             sh &quot;bash ./build.sh;&quot;
+        //         }
+        // }
+        stage(&apos;Run&apos;) {
             docker
-                .image(&apos;jenkins-agent-ubuntu&apos;)
-                .inside(&apos;--volumes-from jenkins-master&apos;) {
-                    sh &quot;bash ./build.sh;&quot;
-                }
+                .image(&apos;javaee/java-demo&apos;)
         }
     }
 }</script>
