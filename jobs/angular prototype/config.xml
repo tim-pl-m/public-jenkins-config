@@ -11,33 +11,10 @@
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.36">
     <script>node(&apos;master&apos;) {
     docker.withServer(&apos;unix:///var/run/docker.sock&apos;) {
-        // stage(&apos;Git clone&apos;) {
-        //     git &apos;git@github.com-application-jenkins:antonfisher/node-mocha-extjs.git&apos;
-        // }
-        // stage(&apos;Build&apos;) {
-        //     docker
-                
-        //         .image(&apos;jenkins-agent-ubuntu&apos;)
-        //         .inside(&apos;--volumes-from jenkins-master&apos;) {
-        //             sh &quot;bash ./build.sh;&quot;
-        //         }
-        // }
         stage(&apos;Run&apos;) {
-            // docker
-            //     .image(&apos;javaee/java-demo&apos;)
             def demo = docker.image(&apos;javaee/java-demo&apos;)
-            // demo.withRun(&apos;-p 8082:80&apos;)
-            // docker.image(&apos;javaee/java-demo&apos;).withRun(&apos;-p 8082:80&apos;){
-            //     c -&gt;
-            //     // sh &quot;curl -i http://localhost:80/&quot;
-            //     sh ls
-            // }
-            docker.image(&apos;javaee/java-demo&apos;).run(&apos;-p 8083:80&apos;)
-            // docker.image(&apos;javaee/java-demo&apos;).run().args(&apos;--rm -it -p 8082:80&apos;)
-            // docker {
-            //     image &apos;javaee/java-demo&apos;
-            //     args  &apos;-p 8082:80&apos;
-            // }
+            demo.run(&apos;-p 8083:80&apos;)
+
         }
     }
 }</script>
