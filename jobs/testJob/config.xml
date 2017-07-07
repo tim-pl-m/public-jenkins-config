@@ -13,7 +13,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>docker ps</command>
+      <command>docker run --rm -it -p 8082:80 -l demo javaee/java-demo</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
