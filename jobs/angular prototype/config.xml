@@ -15,7 +15,7 @@
             // def demo = docker.image(&apos;javaee/java-demo&apos;)
             // def container = demo.run(&apos;-p 8083:80&apos;)
             // container.stop()
-            sh &apos;docker run -p 8082:80 javaee/java-demo&apos;
+            sh &apos;docker run -d -p 8082:80 -l demo javaee/java-demo&apos;
         }
     }
 }</script>
