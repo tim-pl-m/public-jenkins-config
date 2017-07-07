@@ -14,7 +14,7 @@
         stage(&apos;Run&apos;) {
             // def demo = docker.image(&apos;javaee/java-demo&apos;)
             // demo.run(&apos;-p 8083:80&apos;)
-            sh &apos;pwd&apos;
+            sh &apos;docker run --rm -it -p 8082:80 javaee/java-demo&apos;
         }
     }
 }</script>
