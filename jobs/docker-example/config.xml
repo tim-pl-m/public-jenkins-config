@@ -23,8 +23,10 @@
         //         }
         // }
         stage(&apos;Run&apos;) {
-            docker
-                .image(&apos;javaee/java-demo&apos;)
+            // docker
+            //     .image(&apos;javaee/java-demo&apos;)
+            def demo = docker.image(&apos;javaee/java-demo&apos;)
+            demo.withRun(&apos;-p 8082:80&apos;)
         }
     }
 }</script>
